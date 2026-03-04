@@ -7,7 +7,7 @@ public class DictinaryExec_Chapter21 {
 		Dictionary_Chapter21 dictionary = new Dictionary_Chapter21();
 		
 		// 検索ワードを配列にセット
-		String[] serchWords = {"apple", "banana", "grape", "prange"};
+		String[] serchWords = {"apple", "banana", "grape", "orange"};
 		
 		// 実行
 		dictionary.serch(serchWords);
