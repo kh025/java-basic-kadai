@@ -1,4 +1,4 @@
-package kadai_28;
+package kadai_028;
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -18,6 +18,7 @@ public class Jyanken_Chapter28 {
 			String myHand = scanner.next();
 			
 			if("r".equals(myHand) || "s".equals(myHand) || "p".equals(myHand)) {
+				scanner.close();
 				return myHand;
 			}
 			
@@ -44,13 +45,13 @@ public class Jyanken_Chapter28 {
 		
 		System.out.println("自分の手は" + getHand.get(myChoice) + ",対戦相手の手は" + getHand.get(random));
 		
-		if(myChoice == "r") {
+		if("r".equals(myChoice)) {
 			switch(random) {
 			case "r" -> System.out.println("あいこです");
 			case "s" -> System.out.println("自分の勝ちです");
 			case "p" -> System.out.println("自分の負けです");
 			}
-		} else if(myChoice == "s") {
+		} else if("s".equals(myChoice)) {
 			switch(random) {
 			case "r" -> System.out.println("自分の負けです");
 			case "s" -> System.out.println("あいこです");
